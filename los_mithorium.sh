@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests/ 
 
 # Init Rom Manifest
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
+repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-avc1-viperfx .repo/local_manifests 
