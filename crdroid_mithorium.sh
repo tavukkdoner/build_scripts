@@ -7,9 +7,9 @@ rm -rf .repo/local_manifests/
 repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-avc1-viperfx .repo/local_manifests 
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-avc1-viperfx-crdroid .repo/local_manifests 
 
-# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-avc1-viperfx .repo/local_manifests && 
+# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-avc1-viperfx-crdroid .repo/local_manifests && 
 # if [ ! $? == 0 ]
 # then   curl -o .repo/local_manifests https://github.com/tavukkdoner/local_manifests.git
 #  echo "Git clone failed, downloading through curl instead..."
