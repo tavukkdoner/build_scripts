@@ -15,8 +15,9 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-lo
 #  echo "Git clone failed, downloading through curl instead..."
 # fi 
 
-# Sync the repositories
-/opt/crave/resync.sh 
+# Sync the repositories  
+# /opt/crave/resync.sh 
+/opt/crave/resynctest.sh
  
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
