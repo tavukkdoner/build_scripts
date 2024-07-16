@@ -25,6 +25,9 @@ export BUILD_USERNAME=tavukkdoner
 export BUILD_HOSTNAME=crave 
 
 source build/envsetup.sh
+
+# Signing
+curl https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh | bash
  
 # Build the ROM
 # lunch lineage_Mi439-ap2a-userdebug && make installclean && mka bacon
