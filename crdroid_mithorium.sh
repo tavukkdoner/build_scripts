@@ -27,4 +27,7 @@ export BUILD_HOSTNAME=crave
 source build/envsetup.sh
  
 # Build the ROM
-lunch lineage_Mi439-ap2a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439-ap2a-userdebug && make installclean && mka bacon
+
+# Build the ROM
+lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
