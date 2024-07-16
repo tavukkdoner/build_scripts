@@ -27,7 +27,7 @@ export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
 # Signing
-curl https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
 chmod +x create-signed-env.sh
 ./create-signed-env.sh
  
