@@ -30,9 +30,9 @@ source build/envsetup.sh
 # Signing (call this once first time to generate keys and comment those lines for other times) 
 # (call again if /vendor/lineage-priv is not exist)
 # change with your values before using this script from country code until email 
-# curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
-# chmod +x create-signed-env.sh
-# ./create-signed-env.sh
+curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
 
 # after second and more time no need to generate again and again keys connect your storage
 # copy that folder to keep prevent if removed somehow
@@ -46,3 +46,6 @@ source build/envsetup.sh
 
 # Build the ROM
 lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
+
+# https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
+# lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
