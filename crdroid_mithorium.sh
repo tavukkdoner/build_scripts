@@ -20,7 +20,16 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-cr
 # Sync the repositories  
 # /opt/crave/resync.sh 
 /opt/crave/resynctest.sh
- 
+
+# Ty Crave 
+cd packages/apps/Settings
+git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
+git fetch tmpRepo
+git cherry-pick 75c8e07
+git cherry-pick 7ecc750
+git remote remove tmpRepo
+cd ../../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave 
