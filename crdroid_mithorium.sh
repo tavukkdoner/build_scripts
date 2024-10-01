@@ -30,10 +30,18 @@ git cherry-pick 7ecc750
 git remote remove tmpRepo
 cd ../../../
 
-# slow-cpu
 cd frameworks/av
-curl https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/mediaswcodec.patch | git apply
+git remote add tmpRepo1 https://github.com/tavukkdoner/android_frameworks_av
+git fetch tmpRepo1
+git cherry-pick 8af4e3d
+git remote remove tmpRepo1
 cd ../../
+
+# slow-cpu
+# cd frameworks/av
+# curl https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/mediaswcodec.patch | git apply
+# curl https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/mediaswcodec1.patch | git apply
+# cd ../../
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
