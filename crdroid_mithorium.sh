@@ -30,6 +30,11 @@ git cherry-pick 7ecc750
 git remote remove tmpRepo
 cd ../../../
 
+# slow-cpu
+cd frameworks/av
+curl https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/mediaswcodec.patch | git apply
+cd ../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave 
