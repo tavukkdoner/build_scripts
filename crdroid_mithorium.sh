@@ -30,6 +30,13 @@ git cherry-pick 7ecc750
 git remote remove tmpRepo
 cd ../../../
 
+cd lineage-sdk
+git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
+git fetch tmpRepo1
+git cherry-pick 89ef794
+git remote remove tmpRepo1
+cd ../
+
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
