@@ -47,9 +47,9 @@ source build/envsetup.sh
 # Signing (call this once first time to generate keys and comment those lines for other times) 
 # (call again if /vendor/lineage-priv is not exist)
 # change with your values before using this script from country code until email 
-# curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
-# chmod +x create-signed-env.sh
-# ./create-signed-env.sh
+curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
 
 # after second and more time no need to generate again and again keys connect your storage
 # copy that folder to keep prevent if removed somehow
