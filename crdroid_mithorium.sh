@@ -27,6 +27,8 @@ git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Sett
 git fetch tmpRepo
 git cherry-pick 75c8e07
 git cherry-pick 7ecc750
+# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/8ae1b733443d0aecacef1f64f2e020c95e42ca22
+git revert 8ae1b73
 git remote remove tmpRepo
 cd ../../../
 
