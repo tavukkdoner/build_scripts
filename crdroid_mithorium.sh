@@ -39,6 +39,12 @@ git cherry-pick 89ef794
 git remote remove tmpRepo1
 cd ../
 
+cd vendor/lineage
+git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
+git fetch tmpRepo2
+git cherry-pick 40fe82e
+git remote remove tmpRepo2
+cd ../../
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
