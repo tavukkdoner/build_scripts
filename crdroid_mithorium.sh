@@ -24,7 +24,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-cr
 # Ty Crave 
 cd packages/apps/Settings
 git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
-git fetch tmpRepo
+git fetch tmpRepo 14.0
 git cherry-pick 75c8e07
 git cherry-pick 7ecc750
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/8ae1b733443d0aecacef1f64f2e020c95e42ca22
@@ -34,14 +34,14 @@ cd ../../../
 
 cd lineage-sdk
 git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
-git fetch tmpRepo1
+git fetch tmpRepo1 14.0
 git cherry-pick 89ef794
 git remote remove tmpRepo1
 cd ../
 
 cd vendor/lineage
 git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
-git fetch tmpRepo2
+git fetch tmpRepo2 14.0
 git cherry-pick 40fe82e
 git remote remove tmpRepo2
 cd ../../
