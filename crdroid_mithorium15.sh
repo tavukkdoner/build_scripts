@@ -46,6 +46,13 @@ git cherry-pick 2597054
 git remote remove tmpRepo2
 cd ../../
 
+cd build/soong
+git remote add tmpRepo3 https://github.com/LineageOS/android_build_soong
+git fetch tmpRepo3 lineage-22.0
+git cherry-pick 9d6c7dc
+git remote remove tmpRepo3
+cd ../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave 
