@@ -50,12 +50,12 @@ git remote remove tmpRepo2
 #git remote remove tmpRepo4
 cd ../../
 
-cd build/soong
-git remote add tmpRepo3 https://github.com/LineageOS/android_build_soong
-git fetch tmpRepo3 lineage-22.0
-git cherry-pick 9d6c7dc
-git remote remove tmpRepo3
-cd ../../
+#cd build/soong
+#git remote add tmpRepo3 https://github.com/LineageOS/android_build_soong
+#git fetch tmpRepo3 lineage-22.0
+#git cherry-pick 9d6c7dc
+#git remote remove tmpRepo3
+#cd ../../
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
