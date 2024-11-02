@@ -44,6 +44,10 @@ git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
 git fetch tmpRepo2 15.0
 git cherry-pick 2597054
 git remote remove tmpRepo2
+git remote add tmpRepo4 https://github.com/LineageOS/android_vendor_lineage
+git fetch tmpRepo4 lineage-22.0
+git cherry-pick d6777fa
+git remote remove tmpRepo4
 cd ../../
 
 cd build/soong
