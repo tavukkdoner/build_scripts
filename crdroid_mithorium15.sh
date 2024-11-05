@@ -39,6 +39,10 @@ git cherry-pick a3743d1
 git remote remove tmpRepo1
 cd ../
 
+cd device/qcom/sepolicy-legacy-um
+git fetch https://github.com/LineageOS/android_device_qcom_sepolicy refs/changes/45/407745/1 && git cherry-pick FETCH_HEAD
+cd ../../../
+
 cd vendor/lineage
 git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
 git fetch tmpRepo2 15.0
