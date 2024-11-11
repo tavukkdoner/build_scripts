@@ -9,7 +9,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a14-los-official1 .repo/local_manifests 
+git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
 # if [ ! $? == 0 ]
