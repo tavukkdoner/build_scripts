@@ -83,6 +83,10 @@ fi
 # lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
-lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-ap3a-eng && make installclean && mka bacon
+
+# https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/411251
+lunch lineage_Mi439_4_19-ap4a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-ap4a-eng && make installclean && mka bacon
 
