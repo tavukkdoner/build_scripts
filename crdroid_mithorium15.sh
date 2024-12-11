@@ -32,12 +32,12 @@ git revert 7607b74
 git remote remove tmpRepo
 cd ../../../
 
-cd lineage-sdk
-git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
-git fetch tmpRepo1 15.0
-git cherry-pick a3743d1
-git remote remove tmpRepo1
-cd ../
+# cd lineage-sdk
+# git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
+# git fetch tmpRepo1 15.0
+# git cherry-pick a3743d1
+# git remote remove tmpRepo1
+# cd ../
 
 cd vendor/lineage
 git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
