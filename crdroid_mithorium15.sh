@@ -27,8 +27,8 @@ git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Sett
 git fetch tmpRepo 15.0
 git cherry-pick 5b10cc5
 git cherry-pick 3417a30
-# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/7607b740c9d2b7020f6b5b47d5ff018cf8669ed0
-git revert 7607b74
+# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/597200236b4aa2bd6cebbbc69ca05c5bb04ef296
+git revert 5972002
 git remote remove tmpRepo
 cd ../../../
 
@@ -83,10 +83,10 @@ fi
 # lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
-# lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
+lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-ap3a-eng && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/411251
-lunch lineage_Mi439_4_19-ap4a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-ap4a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-ap4a-eng && make installclean && mka bacon
 
