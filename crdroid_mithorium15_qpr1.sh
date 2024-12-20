@@ -28,6 +28,7 @@ git fetch tmpRepo 15.0
 git cherry-pick 5b10cc5
 git cherry-pick 3417a30
 git cherry-pick 6a97a6a
+git cherry-pick 4303feb
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/597200236b4aa2bd6cebbbc69ca05c5bb04ef296
 git revert 5972002
 git remote remove tmpRepo
