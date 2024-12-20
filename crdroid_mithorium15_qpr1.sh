@@ -9,7 +9,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
+git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium-15-qpr1 .repo/local_manifests 
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
 # if [ ! $? == 0 ]
@@ -27,6 +27,7 @@ git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Sett
 git fetch tmpRepo 15.0
 git cherry-pick 5b10cc5
 git cherry-pick 3417a30
+git cherry-pick 6a97a6a
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/597200236b4aa2bd6cebbbc69ca05c5bb04ef296
 git revert 5972002
 git remote remove tmpRepo
