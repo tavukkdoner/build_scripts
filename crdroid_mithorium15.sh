@@ -27,6 +27,9 @@ git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Sett
 git fetch tmpRepo 15.0
 git cherry-pick 5b10cc5
 git cherry-pick 3417a30
+git cherry-pick 6a97a6a
+git cherry-pick 4303feb
+git cherry-pick 3f92d8a
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/597200236b4aa2bd6cebbbc69ca05c5bb04ef296
 git revert 5972002
 git remote remove tmpRepo
@@ -50,12 +53,12 @@ git remote remove tmpRepo2
 #git remote remove tmpRepo4
 cd ../../
 
-cd system/netd
-git remote add tmpRepo5 https://github.com/tavukkdoner/android_system_netd
-git fetch tmpRepo5 lineage-22.0
-git cherry-pick d904525
-git remote remove tmpRepo5
-cd ../../
+#cd system/netd
+#git remote add tmpRepo5 https://github.com/tavukkdoner/android_system_netd
+#git fetch tmpRepo5 lineage-22.0
+#git cherry-pick d904525
+#git remote remove tmpRepo5
+#cd ../../
 
 #cd build/soong
 #git remote add tmpRepo3 https://github.com/LineageOS/android_build_soong
