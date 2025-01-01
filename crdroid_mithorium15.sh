@@ -25,13 +25,11 @@ git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-c
 cd packages/apps/Settings
 git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
 git fetch tmpRepo 15.0
-git cherry-pick 5b10cc5
-git cherry-pick 3417a30
-git cherry-pick 6a97a6a
-git cherry-pick 4303feb
-git cherry-pick 3f92d8a
-# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/597200236b4aa2bd6cebbbc69ca05c5bb04ef296
-git revert 5972002
+git cherry-pick d27b9d1
+git cherry-pick dac755c
+git cherry-pick e0ae4e2
+# https://github.com/crdroidandroid/android_packages_apps_Settings/commit/0152dd73f1f533533ee6b5a7f6e33b97ac340aad
+git revert 0152dd7
 git remote remove tmpRepo
 cd ../../../
 
