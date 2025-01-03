@@ -65,6 +65,13 @@ cd ../../
 #git remote remove tmpRepo3
 #cd ../../
 
+cd packages/apps/DocumentsUI
+git remote add tmpRepo6 https://github.com/tavukkdoner/android_packages_apps_DocumentsUI
+git fetch tmpRepo6 15.0
+git cherry-pick db1dd11
+git remote remove tmpRepo6
+cd ../../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
