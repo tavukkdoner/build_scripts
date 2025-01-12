@@ -72,6 +72,10 @@ git cherry-pick db1dd11
 git remote remove tmpRepo6
 cd ../../../
 
+cd frameworks/av/media/libstagefright/data/
+curl -O https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/media_codecs_sw.xml
+cd ../../../../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
