@@ -52,9 +52,12 @@ git remote remove tmpRepo2
 cd ../../
 
 cd packages/modules/Connectivity
-git remote add tmpRepo7 https://github.com/LineageOS/android_packages_modules_Connectivity
+# git remote add tmpRepo7 https://github.com/LineageOS/android_packages_modules_Connectivity
+# git fetch tmpRepo7 lineage-22.1
+# git revert 7f2b3da
+git remote add tmpRepo7 https://github.com/tavukkdoner/android_packages_modules_Connectivity
 git fetch tmpRepo7 lineage-22.1
-git revert 7f2b3da
+git revert bdd1db1
 cd ../../../
 
 #cd system/netd
