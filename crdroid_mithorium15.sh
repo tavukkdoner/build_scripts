@@ -57,7 +57,7 @@ cd packages/modules/Connectivity
 # git revert 7f2b3da
 git remote add tmpRepo7 https://github.com/tavukkdoner/android_packages_modules_Connectivity
 git fetch tmpRepo7 lineage-22.1
-git revert bdd1db1
+git cherry-pick bdd1db1
 cd ../../../
 
 #cd system/netd
