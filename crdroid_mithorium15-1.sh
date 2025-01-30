@@ -21,6 +21,13 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15 .r
 # /opt/crave/resync.sh 
 /opt/crave/resynctest.sh
 
+cd device/xiaomi/Mi439
+git remote add tmpRepo3 https://github.com/tavukkdoner/android_device_xiaomi_Mi439
+git fetch tmpRepo3 a15/master1
+git cherry-pick bfbe607
+git remote remove tmpRepo3
+cd ../../../
+
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
