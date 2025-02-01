@@ -26,6 +26,8 @@ git remote add tmpRepo3 https://github.com/tavukkdoner/android_device_xiaomi_Mi4
 git fetch tmpRepo3 a15/master1
 git cherry-pick bfbe607
 git cherry-pick bbe2a87
+git cherry-pick e38a506
+git cherry-pick 991fb62
 git remote remove tmpRepo3
 cd ../../../
 
