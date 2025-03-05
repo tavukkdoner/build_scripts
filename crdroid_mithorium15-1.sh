@@ -56,6 +56,10 @@ fi
 # lunch lineage_Mi439_4_19-ap3a-eng && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/411251
-lunch lineage_Mi439_4_19-ap4a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-ap4a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-ap4a-eng && make installclean && mka bacon
 
+# https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
+# compatibility_matrix.5.xml is ok
+lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
