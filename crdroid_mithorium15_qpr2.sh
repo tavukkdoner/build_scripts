@@ -23,16 +23,16 @@ git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-c
 /opt/crave/resynctest.sh
 
 # Ty Crave 
-cd packages/apps/Settings
-git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
-git fetch tmpRepo 15.0
-git cherry-pick 3a97225
-git cherry-pick 46f3cd9
-git cherry-pick e6444ae
+# cd packages/apps/Settings
+# git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
+# git fetch tmpRepo 15.0
+# git cherry-pick 3a97225
+# git cherry-pick 46f3cd9
+# git cherry-pick e6444ae
 # https://github.com/tavukkdoner/android_packages_apps_Settings/commit/1ebf2c407e48741d2a6b06e45837580230c3256f
-git revert 1ebf2c4
-git remote remove tmpRepo
-cd ../../../
+# git revert 1ebf2c4
+# git remote remove tmpRepo
+# cd ../../../
 
 # cd lineage-sdk
 # git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
