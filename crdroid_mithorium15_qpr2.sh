@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf hardware/mithorium/
+# rm -rf hardware/mithorium/
 
 # Init Rom Manifest
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
