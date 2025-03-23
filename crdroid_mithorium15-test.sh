@@ -23,30 +23,30 @@
 # /opt/crave/resynctest.sh
 
 # Ty Crave 
-cd frameworks/base
-git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
-git fetch tmpRepo 15.0
-git cherry-pick 73148d9
-git remote remove tmpRepo
-cd ../../
+# cd frameworks/base
+# git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
+# git fetch tmpRepo 15.0
+# git cherry-pick 73148d9
+# git remote remove tmpRepo
+# cd ../../
 
-cd lineage-sdk
-git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
-git fetch tmpRepo1 15.0
-git cherry-pick 5f2ee1b
-git remote remove tmpRepo1
-cd ../
+# cd lineage-sdk
+# git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
+# git fetch tmpRepo1 15.0
+# git cherry-pick 5f2ee1b
+# git remote remove tmpRepo1
+# cd ../
 
-cd vendor/lineage
-git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
-git fetch tmpRepo2 15.0
-git cherry-pick 7af373d
-git remote remove tmpRepo2
+# cd vendor/lineage
+# git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
+# git fetch tmpRepo2 15.0
+# git cherry-pick 7af373d
+#  git remote remove tmpRepo2
 #git remote add tmpRepo4 https://github.com/LineageOS/android_vendor_lineage
 #git fetch tmpRepo4 lineage-22.0
 #git cherry-pick d6777fa
 #git remote remove tmpRepo4
-cd ../../
+#  cd ../../
 
 
 
