@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf hardware/mithorium/
+# rm -rf hardware/mithorium/
 
 # Init Rom Manifest
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
@@ -40,6 +40,7 @@ git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
 git fetch tmpRepo 15.0
 git cherry-pick 2071b92
 git cherry-pick 4841960
+git cherry-pick 2423cf5
 git remote remove tmpRepo
 cd ../../
 
