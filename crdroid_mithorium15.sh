@@ -10,7 +10,8 @@ repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
+# git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2 .repo/local_manifests
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
 # if [ ! $? == 0 ]
@@ -23,16 +24,24 @@ git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-c
 /opt/crave/resynctest.sh
 
 # Ty Crave 
-cd packages/apps/Settings
-git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
-git fetch tmpRepo 15.0
-git cherry-pick 3a97225
-git cherry-pick 46f3cd9
-git cherry-pick e6444ae
+# cd packages/apps/Settings
+# git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
+# git fetch tmpRepo 15.0
+# git cherry-pick 3a97225
+# git cherry-pick 46f3cd9
+# git cherry-pick e6444ae
 # https://github.com/tavukkdoner/android_packages_apps_Settings/commit/1ebf2c407e48741d2a6b06e45837580230c3256f
-git revert 1ebf2c4
+# git revert 1ebf2c4
+# git remote remove tmpRepo
+# cd ../../../
+
+cd frameworks/base
+git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
+git fetch tmpRepo 15.0
+git cherry-pick 2071b92
+git cherry-pick 4841960
 git remote remove tmpRepo
-cd ../../../
+cd ../../
 
 # cd lineage-sdk
 # git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
@@ -44,7 +53,7 @@ cd ../../../
 cd vendor/lineage
 git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
 git fetch tmpRepo2 15.0
-git cherry-pick 7af373d
+git cherry-pick 6e3d8bd
 git remote remove tmpRepo2
 #git remote add tmpRepo4 https://github.com/LineageOS/android_vendor_lineage
 #git fetch tmpRepo4 lineage-22.0
