@@ -13,7 +13,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2 .repo/local_manifests
 
-# Original local_manifest Mi439 A15 QPR2 no modifications
+# Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
