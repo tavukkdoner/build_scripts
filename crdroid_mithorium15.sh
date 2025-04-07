@@ -11,7 +11,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
 # git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2 .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-test .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -38,14 +38,14 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 # git remote remove tmpRepo
 # cd ../../../
 
-cd frameworks/base
-git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
-git fetch tmpRepo 15.0
-git cherry-pick 2071b92
-git cherry-pick 4841960
-git cherry-pick 2423cf5
-git remote remove tmpRepo
-cd ../../
+#cd frameworks/base
+#git remote add tmpRepo https://github.com/tavukkdoner/android_frameworks_base
+#git fetch tmpRepo 15.0
+#git cherry-pick 2071b92
+#git cherry-pick 4841960
+#git cherry-pick 2423cf5
+#git remote remove tmpRepo
+#cd ../../
 
 # cd lineage-sdk
 # git remote add tmpRepo1 https://github.com/tavukkdoner/android_lineage-sdk
@@ -54,16 +54,16 @@ cd ../../
 # git remote remove tmpRepo1
 # cd ../
 
-cd vendor/lineage
-git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
-git fetch tmpRepo2 15.0
-git cherry-pick 6e3d8bd
-git remote remove tmpRepo2
+#cd vendor/lineage
+#git remote add tmpRepo2 https://github.com/tavukkdoner/android_vendor_crdroid
+#git fetch tmpRepo2 15.0
+#git cherry-pick 6e3d8bd
+#git remote remove tmpRepo2
 #git remote add tmpRepo4 https://github.com/LineageOS/android_vendor_lineage
 #git fetch tmpRepo4 lineage-22.0
 #git cherry-pick d6777fa
 #git remote remove tmpRepo4
-cd ../../
+#cd ../../
 
 # cd packages/modules/Connectivity
 # git remote add tmpRepo7 https://github.com/LineageOS/android_packages_modules_Connectivity
