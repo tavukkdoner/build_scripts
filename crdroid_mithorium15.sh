@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Remove Local Manifests
-rm -rf .repo/local_manifests/ 
+# rm -rf .repo/local_manifests/ 
 # rm -rf hardware/mithorium/
 
 # Init Rom Manifest
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+# repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
 # git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-test .repo/local_manifests
+# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-test .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -24,7 +24,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 
 # Sync the repositories  
 # /opt/crave/resync.sh 
-/opt/crave/resynctest.sh
+# /opt/crave/resynctest.sh
 
 # Ty Crave 
 # cd packages/apps/Settings
