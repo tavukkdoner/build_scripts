@@ -27,6 +27,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
+cd build/soong
+git fetch https://github.com/LineageOS/android_build_soong refs/changes/98/426698/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
 # Ty Crave 
 # cd packages/apps/Settings
 # git remote add tmpRepo https://github.com/tavukkdoner/android_packages_apps_Settings
