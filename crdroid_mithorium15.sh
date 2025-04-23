@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Remove Local Manifests
-rm -rf .repo/local_manifests/ 
+# rm -rf .repo/local_manifests/ 
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
 
 # Init Rom Manifest
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+# repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
@@ -24,7 +24,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 # fi 
 
 # Sync the repositories  
-/opt/crave/resync.sh 
+# /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # cd build/soong
