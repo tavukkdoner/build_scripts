@@ -55,7 +55,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 cd frameworks/base
 git remote add tmpRepofb https://github.com/tavukkdoner/android_frameworks_base
 git fetch tmpRepofb 15.0-qpr2
-git cherry-pick aab45e3
+git cherry-pick 175aa44
 #git cherry-pick 4841960
 #git cherry-pick 2423cf5
 git remote remove tmpRepofb
