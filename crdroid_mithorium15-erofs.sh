@@ -29,14 +29,14 @@
 # /opt/crave/resynctest.sh
 
 
-cd frameworks/base
-git remote add tmpRepofb https://github.com/tavukkdoner/android_frameworks_base
-git fetch tmpRepofb 15.0-qpr2
-git cherry-pick 81d7d80
+# cd frameworks/base
+# git remote add tmpRepofb https://github.com/tavukkdoner/android_frameworks_base
+# git fetch tmpRepofb 15.0-qpr2
+# git cherry-pick 81d7d80
 #git cherry-pick 4841960
 #git cherry-pick 2423cf5
-git remote remove tmpRepofb
-cd ../../
+# git remote remove tmpRepofb
+# cd ../../
 
 # cd frameworks/av/media/libstagefright/data/
 # curl -O https://raw.githubusercontent.com/tavukkdoner/patches/refs/heads/main/media_codecs_sw.xml
