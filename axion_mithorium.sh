@@ -51,5 +51,5 @@ axion Mi439_4_19 va
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 # export TARGET_USES_EROFS=true
 # axion Mi439_4_19 gms pico
-ax -br -j16
+ax -br
 
