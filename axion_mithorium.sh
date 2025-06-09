@@ -51,5 +51,7 @@ axion Mi439_4_19 va
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 # export TARGET_USES_EROFS=true
 # axion Mi439_4_19 gms pico
-ax -br
+# https://github.com/AxionAOSP/android_build/blob/lineage-22.2/envsetup.sh#L1383
+# ax -br
+brunch Mi439_4_19
 
