@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests/ 
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
-# rm -rf hardware/mithorium/
+rm -rf hardware/mithorium/
 
 # Init Rom Manifest
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
@@ -13,10 +13,10 @@ repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-avc1-viperfx .repo/local_manifests
 # git clone https://github.com/tavukkdoner/local_manifests1.git --depth 1 -b a15-crdroid-mithorium .repo/local_manifests 
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-axion .repo/local_manifests
+# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-axion .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
-# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
 
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-los-official-test .repo/local_manifests && 
 # if [ ! $? == 0 ]
@@ -44,7 +44,16 @@ if [ ! -e "vendor/lineage-priv" ]; then
     ./create-signed-env.sh
 fi
 
-
+export TARGET_DISABLE_EPPE=true
+export AXION_CAMERA_REAR_INFO=5
+export AXION_CAMERA_FRONT_INFO=13
+export AXION_PROCESSOR=SDM439
+export AXION_CPU_SMALL_CORES=4,5,6,7
+export AXION_CPU_BIG_CORES=0,1,2,3
+export AXION_CPU_BG=5-7
+export AXION_CPU_FG=0-5
+export AXION_CPU_LIMIT_BG=6-7
+export TARGET_INCLUDE_MATLOG=true
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
 axion Mi439_4_19 va
