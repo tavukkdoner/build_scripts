@@ -56,7 +56,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qp
 cd frameworks/base
 git remote add tmpRepofb https://github.com/tavukkdoner/android_frameworks_base
 git fetch tmpRepofb 15.0-qpr2
-git cherry-pick 4a2a591
+git cherry-pick 8868aea
 #git cherry-pick 4841960
 #git cherry-pick 2423cf5
 git remote remove tmpRepofb
@@ -142,9 +142,9 @@ fi
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
-# lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
+lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && mka bacon
+# lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
