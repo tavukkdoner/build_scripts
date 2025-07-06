@@ -39,6 +39,7 @@ cd packages/modules/Wifi
 git remote add tmpRepoWifi https://github.com/tavukkdoner/android_packages_modules_Wifi
 git fetch tmpRepoWifi 15.0
 git cherry-pick fc73316
+git cherry-pick 329938f
 git remote remove tmpRepoWifi
 cd ../../../
 
