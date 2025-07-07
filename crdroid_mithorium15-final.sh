@@ -6,6 +6,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 rm -rf hardware/mithorium/
+rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
