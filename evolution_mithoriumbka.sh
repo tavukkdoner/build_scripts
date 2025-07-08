@@ -7,6 +7,7 @@ rm -rf .repo/local_manifests/
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 rm -rf hardware/mithorium/
 rm -rf hardware/qcom-caf/msm8937
+rm -rf prebuilts/clang/host/
 
 # Init Rom Manifest
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
