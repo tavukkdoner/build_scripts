@@ -48,5 +48,5 @@ fi
 export WITH_GMS=false
 # export TARGET_USES_PICO_GAPPS=true
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-# lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && m evolution
-lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
+lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && m evolution
+# lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
