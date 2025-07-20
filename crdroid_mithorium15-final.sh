@@ -44,6 +44,13 @@ git cherry-pick 329938f
 git remote remove tmpRepoWifi
 cd ../../../
 
+cd packages/apps/LMOFreeform
+git remote add tmpRepoForm https://github.com/tavukkdoner/android_packages_apps_LMOFreeform
+git fetch tmpRepoForm 15.0-tmp
+git cherry-pick 56a412e
+git remote remove tmpRepoForm
+cd ../../../
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
