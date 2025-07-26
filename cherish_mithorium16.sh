@@ -49,11 +49,11 @@ source build/envsetup.sh
 
 export WITH_GMS=false
 
-git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
-cd vendor/cherish-priv/keys
-chmod +x keys.sh
-./keys.sh
-cd ../../../
+# git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
+# cd vendor/cherish-priv/keys
+# chmod +x keys.sh
+# ./keys.sh
+# cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
