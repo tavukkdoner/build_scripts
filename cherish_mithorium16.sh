@@ -64,4 +64,4 @@ export WITH_GMS=false
 # lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
 
-brunch Mi439_4_19
+brunch Mi439_4_19 userdebug
