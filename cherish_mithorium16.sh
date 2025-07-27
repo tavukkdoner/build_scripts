@@ -48,6 +48,7 @@ source build/envsetup.sh
 #fi
 
 export WITH_GMS=false
+export TARGET_BOOT_ANIMATION_RES=720
 
 # git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
 # cd vendor/cherish-priv/keys
