@@ -27,13 +27,6 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-#cd vendor/cherish
-#git remote add tmpRepofb https://github.com/tavukkdoner/android_vendor_cherish
-#git fetch tmpRepofb sixteen
-#git cherry-pick dbb5857
-#git remote remove tmpRepofb
-#cd ../../
-
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
