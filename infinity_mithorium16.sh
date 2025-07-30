@@ -42,6 +42,7 @@ source build/envsetup.sh
 
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
+export WITH_GAPPS=false
 
 #git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
 #cd vendor/infinity-priv/keys
