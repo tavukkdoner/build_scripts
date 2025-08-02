@@ -39,9 +39,9 @@ source build/envsetup.sh
 #    ./create-signed-env.sh
 #fi
 
-export WITH_GMS=false
+#export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
-export WITH_GAPPS=false
+#export WITH_GAPPS=false
 
 #git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
 #cd vendor/infinity-priv/keys
