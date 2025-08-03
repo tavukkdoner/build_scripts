@@ -55,7 +55,7 @@ export TARGET_BOOT_ANIMATION_RES=720
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-# lunch infinity_Mi439_4_19-userdebug && make installclean && mka bacon
-lunch infinity_Mi439_4_19-eng && make installclean && mka bacon
+lunch infinity_Mi439_4_19-userdebug && make installclean && mka bacon
+# lunch infinity_Mi439_4_19-eng && make installclean && mka bacon
 
 #brunch Mi439_4_19 userdebug
