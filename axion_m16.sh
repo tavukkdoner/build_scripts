@@ -40,7 +40,7 @@ if [ ! -e "vendor/lineage-priv" ]; then
     ./create-signed-env.sh
 fi
 
-export WITH_GMS=false
+# export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 
 # git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
@@ -53,4 +53,10 @@ export TARGET_BOOT_ANIMATION_RES=720
 # lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
 
+axion Mi439_4_19 va
+# lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
+# export TARGET_USES_EROFS=true
+# axion Mi439_4_19 gms pico
+# https://github.com/AxionAOSP/android_build/blob/lineage-22.2/envsetup.sh#L1383
+# ax -br
 brunch Mi439_4_19 userdebug
