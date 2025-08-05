@@ -38,6 +38,6 @@ fi
 
 export WITH_GMS=false
 export TARGET_USES_MINI_GAPPS=false
-# https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_b2q-bp2a-eng && make installclean && m evolution
+# https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445 && make installclean
+lunch lineage_b2q-bp2a-eng && m evolution
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
