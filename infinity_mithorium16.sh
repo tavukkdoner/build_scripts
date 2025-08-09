@@ -9,7 +9,7 @@
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-#repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 
 # Clone local_manifests repository
 #git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-infinity .repo/local_manifests
@@ -24,7 +24,7 @@
 # fi 
 
 # Sync the repositories  
-#/opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
@@ -39,15 +39,15 @@ source build/envsetup.sh
 #    ./create-signed-env.sh
 #fi
 
-#export WITH_GMS=false
+export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
-#export WITH_GAPPS=false
+export WITH_GAPPS=false
 
-#git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-#cd vendor/infinity-priv/keys
-#chmod +x keys.sh
-#./keys.sh
-#cd ../../../
+git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+cd vendor/infinity-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
