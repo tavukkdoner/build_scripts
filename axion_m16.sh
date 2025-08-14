@@ -2,14 +2,14 @@
 
 # Remove Local Manifests
 # rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+# rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+# repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
 
 # Clone local_manifests repository
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-axion .repo/local_manifests
@@ -40,7 +40,7 @@ if [ ! -e "vendor/lineage-priv" ]; then
     ./create-signed-env.sh
 fi
 
-# export WITH_GMS=false
+export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 
 # git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
