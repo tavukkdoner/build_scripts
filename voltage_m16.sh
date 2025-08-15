@@ -40,7 +40,7 @@ source build/envsetup.sh
 #fi
 
 export WITH_GMS=false
-export TARGET_BOOT_ANIMATION_RES=720
+export TARGET_BOOT_ANIMATION_RES=1280
 export WITH_GAPPS=false
 
 git clone https://github.com/VoltageOS/vendor_voltage-priv_keys -b 16 vendor/voltage-priv/keys
