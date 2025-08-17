@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-# rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
@@ -44,10 +44,10 @@ export TARGET_BOOT_ANIMATION_RES=1280
 export WITH_GAPPS=false
 
 #git clone https://github.com/VoltageOS/vendor_voltage-priv_keys -b 16 vendor/voltage-priv/keys
-#cd vendor/voltage-priv/keys
-#chmod +x keys.sh
-#./keys.sh
-#cd ../../../
+cd vendor/voltage-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
