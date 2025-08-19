@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Remove Local Manifests
-rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+# rm -rf .repo/local_manifests/ 
+# rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
@@ -12,7 +12,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/CherishOS/android_manifest.git -b sixteen --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-cherish .repo/local_manifests
+# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-cherish .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -50,11 +50,11 @@ source build/envsetup.sh
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 
-git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
-cd vendor/cherish-priv/keys
-chmod +x keys.sh
-./keys.sh
-cd ../../../
+# git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
+# cd vendor/cherish-priv/keys
+# chmod +x keys.sh
+# ./keys.sh
+# cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
