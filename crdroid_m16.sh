@@ -30,6 +30,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --n
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
+export TARGET_ENABLE_BLUR=true
 
 source build/envsetup.sh
 
