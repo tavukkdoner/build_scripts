@@ -24,7 +24,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --n
 # fi 
 
 # Sync the repositories  
-/opt/crave/resync.sh 
+# /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
