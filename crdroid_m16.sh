@@ -4,7 +4,7 @@
 #rm -rf .repo/local_manifests/ 
 #rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
-# rm -rf kernel/xiaomi/mithorium-4.19/kernel
+rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
@@ -24,7 +24,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --n
 # fi 
 
 # Sync the repositories  
-# /opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
