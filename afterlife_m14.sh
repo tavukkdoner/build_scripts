@@ -28,6 +28,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a14-af
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
+rm -rf external/chromium-webview/patches
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
