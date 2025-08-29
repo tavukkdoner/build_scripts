@@ -45,6 +45,12 @@ source build/envsetup.sh
 # lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
+
 export WITH_GMS=false
 #export TARGET_USES_EROFS=true
 #export TARGET_USES_MINI_GAPPS=true
