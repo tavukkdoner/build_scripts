@@ -4,6 +4,7 @@
 rm -rf .repo/local_manifests/ 
 #rm -rf prebuilts/clang/host/linux-x86
 rm -rf external/chromium-webview/patches
+rm -rf external/chromium-webview
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
