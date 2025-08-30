@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove Local Manifests
-rm -rf .repo/local_manifests/ 
+# rm -rf .repo/local_manifests/ 
 # rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
@@ -12,7 +12,7 @@ rm -rf .repo/local_manifests/
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-axion .repo/local_manifests
+# git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-axion .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
