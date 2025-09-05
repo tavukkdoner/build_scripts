@@ -2,9 +2,9 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+# rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
-# rm -rf kernel/xiaomi/mithorium-4.19/kernel
+rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
@@ -43,11 +43,11 @@ export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 export WITH_GAPPS=false
 
-git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-cd vendor/infinity-priv/keys
-chmod +x keys.sh
-./keys.sh
-cd ../../../
+#git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+#cd vendor/infinity-priv/keys
+#chmod +x keys.sh
+#./keys.sh
+#cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
