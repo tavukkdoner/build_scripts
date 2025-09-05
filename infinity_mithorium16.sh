@@ -24,7 +24,7 @@ repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfi
 # fi 
 
 # Sync the repositories  
-/opt/crave/resync.sh 
+#/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
