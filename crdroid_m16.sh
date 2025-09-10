@@ -5,7 +5,6 @@ rm -rf .repo/local_manifests/
 # rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 rm -rf kernel/xiaomi/mithorium-4.19
-rm -rf hardware/qcom
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
@@ -31,6 +30,8 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 cd packages/modules/adb
 git fetch https://github.com/LineageOS/android_packages_modules_adb refs/changes/14/450414/4 && git cherry-pick FETCH_HEAD
 cd ../../..
+
+rm -rf hardware/qcom/sm7250
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
