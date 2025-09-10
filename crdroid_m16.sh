@@ -27,6 +27,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
+cd packages/modules/adb
+git fetch https://github.com/LineageOS/android_packages_modules_adb refs/changes/14/450414/4 && git cherry-pick FETCH_HEAD
+cd ../../..
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
