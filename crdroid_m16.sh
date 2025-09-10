@@ -5,6 +5,7 @@ rm -rf .repo/local_manifests/
 # rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 rm -rf kernel/xiaomi/mithorium-4.19
+rm -rf hardware/qcom
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
