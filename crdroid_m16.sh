@@ -31,8 +31,6 @@ cd packages/modules/adb
 git fetch https://github.com/LineageOS/android_packages_modules_adb refs/changes/14/450414/4 && git cherry-pick FETCH_HEAD
 cd ../../..
 
-rm -rf hardware/qcom/sm7250
-
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
