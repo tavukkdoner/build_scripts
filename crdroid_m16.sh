@@ -31,7 +31,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
-# export UCLAMP_FEATURE_ENABLED=true
+export UCLAMP_FEATURE_ENABLED=false
 
 source build/envsetup.sh
 
