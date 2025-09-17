@@ -12,7 +12,7 @@ rm -rf kernel/xiaomi/mithorium-4.19
 repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-pixel .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-pixel .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
