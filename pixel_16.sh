@@ -9,7 +9,7 @@ rm -rf kernel/xiaomi/mithorium-4.19
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen --git-lfs
+#repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-pixel .repo/local_manifests
