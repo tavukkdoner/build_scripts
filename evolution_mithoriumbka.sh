@@ -11,7 +11,7 @@ rm -rf packages/apps/Etar
 # rm -rf prebuilts/clang/host/
 
 # Init Rom Manifest
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+#repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
