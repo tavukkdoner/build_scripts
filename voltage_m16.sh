@@ -42,6 +42,8 @@ source build/envsetup.sh
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=1280
 export WITH_GAPPS=false
+export TARGET_ENABLE_BLUR=true
+export UCLAMP_FEATURE_ENABLED=true
 
 #git clone https://github.com/VoltageOS/vendor_voltage-priv_keys -b 16 vendor/voltage-priv/keys
 cd vendor/voltage-priv/keys
