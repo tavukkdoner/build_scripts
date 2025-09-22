@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Remove Local Manifests
-#rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf .repo/local_manifests/ 
+rm -rf prebuilts/clang/host/linux-x86
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
@@ -12,7 +12,7 @@
 repo init --depth=1 -u https://github.com/VoltageOS/manifest.git -b 16 --git-lfs
 
 # Clone local_manifests repository
-#git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-voltage .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-voltage .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -44,10 +44,10 @@ export TARGET_BOOT_ANIMATION_RES=1280
 export WITH_GAPPS=false
 
 #git clone https://github.com/VoltageOS/vendor_voltage-priv_keys -b 16 vendor/voltage-priv/keys
-#cd vendor/voltage-priv/keys
-#chmod +x keys.sh
-#./keys.sh
-#cd ../../../
+cd vendor/voltage-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
