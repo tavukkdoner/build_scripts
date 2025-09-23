@@ -2,8 +2,8 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
-rm -rf packages/apps/Etar
+rm -rf prebuilts/clang/host/linux-x86
+#rm -rf packages/apps/Etar
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
@@ -11,7 +11,7 @@ rm -rf packages/apps/Etar
 # rm -rf prebuilts/clang/host/
 
 # Init Rom Manifest
-#repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
@@ -28,6 +28,8 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # Sync the repositories  
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
+
+rm -rf packages/apps/Etar
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
@@ -46,11 +48,11 @@ source build/envsetup.sh
 # lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 
-#git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-#cd vendor/evolution-priv/keys
-#chmod +x keys.sh
-#./keys.sh
-#cd ../../../
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
 
 export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
