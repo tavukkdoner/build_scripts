@@ -29,8 +29,6 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-ev
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-rm -rf packages/apps/Etar
-
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
