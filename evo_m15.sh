@@ -14,7 +14,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-final .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-evo .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
