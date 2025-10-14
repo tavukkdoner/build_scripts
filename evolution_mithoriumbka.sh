@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/apps/Etar
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
@@ -29,8 +29,6 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-rm -rf packages/apps/Etar
-
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
@@ -48,15 +46,15 @@ source build/envsetup.sh
 # lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
 
-#git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-#cd vendor/evolution-priv/keys
-#chmod +x keys.sh
-#./keys.sh
-#cd ../../../
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+chmod +x keys.sh
+./keys.sh
+cd ../../../
 
 export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
-export UCLAMP_FEATURE_ENABLED=false
+export UCLAMP_FEATURE_ENABLED=true
 #export TARGET_USES_EROFS=true
 #export TARGET_USES_MINI_GAPPS=true
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
