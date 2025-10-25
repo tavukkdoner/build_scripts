@@ -32,7 +32,6 @@ export BUILD_USERNAME=tavukkdoner
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=true
-export TARGET_DEFAULT_PIXEL_LAUNCHER=false
 export DEX2OAT_THREADS=2
 export DEX2OAT_CORES=6,7
 export WITH_BCR=true
