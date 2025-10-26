@@ -37,7 +37,8 @@ source build/envsetup.sh
 
 cd vendor/google/gms
 rm -rf gms-vendor.mk
-
+curl -O https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/gms-vendor.mk
+cd ../../..
 
 if [ ! -e "vendor/lineage-priv" ]; then
     curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
