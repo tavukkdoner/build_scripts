@@ -12,7 +12,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests_clo.git --depth 1 -b crdroid-16 .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
