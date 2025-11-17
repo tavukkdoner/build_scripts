@@ -3,6 +3,7 @@
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf vendor/lineage-priv
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
 # rm -rf hardware/mithorium/
@@ -40,11 +41,11 @@ export TARGET_BOOT_ANIMATION_RES=720
 
 source build/envsetup.sh
 
-if [ ! -e "vendor/lineage-priv" ]; then
-    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
-    chmod +x create-signed-env.sh
-    ./create-signed-env.sh
-fi
+#if [ ! -e "vendor/lineage-priv" ]; then
+#    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+#    chmod +x create-signed-env.sh
+#    ./create-signed-env.sh
+#fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
 lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && m lunaris
