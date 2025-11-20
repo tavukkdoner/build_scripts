@@ -35,6 +35,7 @@ export UCLAMP_FEATURE_ENABLED=true
 export DEX2OAT_THREADS=2
 export DEX2OAT_CORES=6,7
 export WITH_GMS=false
+export TARGET_DEFAULT_PIXEL_LAUNCHER=false
 export TARGET_BOOT_ANIMATION_RES=720
 
 source build/envsetup.sh
