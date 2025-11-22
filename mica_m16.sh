@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf vendor/lineage-priv
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -37,9 +37,9 @@ export WITH_GMS=false
 export TARGET_EXCLUDE_GMS=true
 export TARGET_BOOT_ANIMATION_RES=720
 
-cd vendor/gms
-bash generate-gms.sh
-cd ../..
+#cd vendor/gms
+#bash generate-gms.sh
+#cd ../..
 
 source build/envsetup.sh
 
