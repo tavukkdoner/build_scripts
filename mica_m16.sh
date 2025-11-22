@@ -37,9 +37,9 @@ export WITH_GMS=false
 export TARGET_EXCLUDE_GMS=true
 export TARGET_BOOT_ANIMATION_RES=720
 
-#cd vendor/gms
-#bash generate-gms.sh
-#cd ../..
+cd vendor/gms
+bash generate-gms.sh
+cd ../..
 
 source build/envsetup.sh
 
