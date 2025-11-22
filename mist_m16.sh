@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
 # rm -rf hardware/mithorium/
@@ -32,8 +32,8 @@ export BUILD_USERNAME=tavukkdoner
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=true
-export DEX2OAT_THREADS=2
-export DEX2OAT_CORES=6,7
+export DEX2OAT_THREADS=4
+export DEX2OAT_CORES=4,5,6,7
 export WITH_GMS=false
 export TARGET_DEFAULT_PIXEL_LAUNCHER=false
 export TARGET_BOOT_ANIMATION_RES=720
