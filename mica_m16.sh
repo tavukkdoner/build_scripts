@@ -2,6 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
+rm -rf vendor/gms
 #rm -rf prebuilts/clang/host/linux-x86
 #rm -rf vendor/lineage-priv
 #rm -rf packages/modules/adb
