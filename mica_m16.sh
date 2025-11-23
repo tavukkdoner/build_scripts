@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf vendor/gms
+#rm -rf vendor/gms
 #rm -rf prebuilts/clang/host/linux-x86
 #rm -rf vendor/lineage-priv
 #rm -rf packages/modules/adb
@@ -51,6 +51,7 @@ if [ ! -e "vendor/lineage-priv" ]; then
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch mica_Mi439_4_19-bp3a-userdebug && make installclean && mka bacon
-# m mica-release
+lunch mica_Mi439_4_19-bp3a-userdebug
+make installclean 
+m mica-release
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
