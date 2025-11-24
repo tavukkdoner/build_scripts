@@ -11,7 +11,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # rm -rf prebuilts/clang/host/
 
 # Init Rom Manifest
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
@@ -58,5 +58,5 @@ export UCLAMP_FEATURE_ENABLED=true
 #export TARGET_USES_EROFS=true
 #export TARGET_USES_MINI_GAPPS=true
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && m evolution
+lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
