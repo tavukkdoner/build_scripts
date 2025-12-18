@@ -7,16 +7,17 @@ rm -rf .repo/local_manifests/
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
+rm -rf vendor/gms
 # rm -rf hardware/qcom-caf/msm8937
 # rm -rf prebuilts/clang/host/
 
 # Init Rom Manifest
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
-#repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
+#repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
 
 # Clone local_manifests repository
-#git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo1 .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
+#git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo1 .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -28,7 +29,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-#/opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
@@ -56,11 +57,11 @@ if [ ! -e "vendor/evolution-priv" ]; then
     cd ../../../
 fi
 
-export WITH_GMS=true
+export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=true
 #export TARGET_USES_EROFS=true
-export TARGET_USES_PICO_GAPPS=true
+export TARGET_USES_PICO_GAPPS=false
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-#lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
-lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
+lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
+#lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
