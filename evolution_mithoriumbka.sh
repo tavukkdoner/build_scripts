@@ -7,7 +7,7 @@ rm -rf .repo/local_manifests/
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
 # rm -rf hardware/mithorium/
-rm -rf vendor/gms
+#rm -rf vendor/gms
 # rm -rf hardware/qcom-caf/msm8937
 # rm -rf prebuilts/clang/host/
 
@@ -29,7 +29,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-/opt/crave/resync.sh 
+#/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
@@ -57,11 +57,11 @@ if [ ! -e "vendor/evolution-priv" ]; then
     cd ../../../
 fi
 
-export WITH_GMS=false
+export WITH_GMS=true
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=true
 #export TARGET_USES_EROFS=true
-export TARGET_USES_PICO_GAPPS=false
+export TARGET_USES_PICO_GAPPS=true
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
 lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
 #lunch lineage_Mi439_4_19-bp2a-eng && make installclean && m evolution
