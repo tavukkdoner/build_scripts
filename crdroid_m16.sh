@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -43,5 +43,5 @@ if [ ! -e "vendor/lineage-priv" ]; then
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && mka bacon
+lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
