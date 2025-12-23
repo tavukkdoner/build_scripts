@@ -28,6 +28,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
+cd build/make
+curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+cd ../..
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
