@@ -9,7 +9,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16-QPR1 -g default,-mips,-darwin,-notdefault
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-infinity .repo/local_manifests
