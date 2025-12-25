@@ -9,7 +9,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.1 --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-axion .repo/local_manifests
@@ -41,6 +41,14 @@ if [ ! -e "vendor/lineage-priv" ]; then
     chmod +x create-signed-env.sh
     ./create-signed-env.sh
 fi
+
+cd build/make
+curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+cd ../..
+
+cd system/core
+curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
+cd ../..
 
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
