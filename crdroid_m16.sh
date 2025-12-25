@@ -36,7 +36,7 @@ cd ../..
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
-export UCLAMP_FEATURE_ENABLED=false
+export UCLAMP_FEATURE_ENABLED=true
 
 source build/envsetup.sh
 
