@@ -39,6 +39,14 @@ source build/envsetup.sh
 #    ./create-signed-env.sh
 #fi
 
+cd build/make
+curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+cd ../..
+
+cd system/core
+curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
+cd ../..
+
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 export WITH_GAPPS=false
