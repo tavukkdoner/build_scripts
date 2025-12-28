@@ -53,11 +53,14 @@ export WITH_GAPPS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=true
 
-git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
-cd vendor/infinity-priv/keys
-chmod +x keys.sh
-./keys.sh
-cd ../../../
+if [ ! -e "vendor/infinity-priv" ]; then
+    git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+    cd vendor/infinity-priv/keys
+    chmod +x keys.sh
+    ./keys.sh
+    cd ../../../
+fi
+
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
