@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/apps/Etar
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
@@ -48,6 +48,14 @@ source build/envsetup.sh
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
 # lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
+
+cd build/make
+curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+cd ../..
+
+cd system/core
+curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
+cd ../..
 
 if [ ! -e "vendor/evolution-priv" ]; then
     git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
