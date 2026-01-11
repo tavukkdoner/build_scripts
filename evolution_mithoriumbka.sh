@@ -53,9 +53,9 @@ cd build/make
 curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
 cd ../..
 
-cd system/core
-curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
-cd ../..
+#cd system/core
+#curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
+#cd ../..
 
 if [ ! -e "vendor/evolution-priv" ]; then
     git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
@@ -67,7 +67,7 @@ fi
 
 export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
-export UCLAMP_FEATURE_ENABLED=true
+export UCLAMP_FEATURE_ENABLED=false
 #export TARGET_USES_EROFS=true
 export TARGET_USES_PICO_GAPPS=false
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
