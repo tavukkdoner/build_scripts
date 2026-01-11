@@ -29,7 +29,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-#/opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
