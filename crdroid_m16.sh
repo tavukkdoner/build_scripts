@@ -28,10 +28,6 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-cd packages/apps/Launcher3
-curl https://github.com/tavukkdoner/android_packages_apps_Launcher3/commit/aff0c4ded2cfecb0922ac1069b6babce4665dd49.patch | git am
-cd ../../..
-
 cd build/make
 curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
 cd ../..
