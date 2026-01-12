@@ -52,6 +52,7 @@ cd ../..
 
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
+export TARGET_USES_VULKAN=true
 
 # git clone https://github.com/CherishOS/vendor_cherish-priv_keys-template vendor/cherish-priv/keys
 # cd vendor/cherish-priv/keys
