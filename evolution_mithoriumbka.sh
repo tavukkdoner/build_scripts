@@ -68,6 +68,7 @@ fi
 export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=false
+export TARGET_USES_VULKAN=true
 #export TARGET_USES_EROFS=true
 export TARGET_USES_PICO_GAPPS=false
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
