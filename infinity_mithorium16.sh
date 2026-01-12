@@ -52,6 +52,7 @@ export TARGET_BOOT_ANIMATION_RES=720
 export WITH_GAPPS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=false
+export TARGET_USES_VULKAN=true
 
 if [ ! -e "vendor/infinity-priv" ]; then
     git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
