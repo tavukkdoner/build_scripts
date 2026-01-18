@@ -45,6 +45,10 @@ source build/envsetup.sh
 #     ./create-signed-env.sh
 # fi
 
+cd frameworks/av
+git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
 # lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
