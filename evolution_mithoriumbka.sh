@@ -45,13 +45,13 @@ source build/envsetup.sh
 #     ./create-signed-env.sh
 # fi
 
-cd frameworks/av
-git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
-cd ../..
+#cd frameworks/av
+#git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
+#cd ../..
 
-cd frameworks/native
-curl https://github.com/VoltageOS/frameworks_native/commit/7e4df9a63981d6796d31e810a427b7d58c0d4dc7.patch | git am
-cd ../..
+#cd frameworks/native
+#curl https://github.com/VoltageOS/frameworks_native/commit/7e4df9a63981d6796d31e810a427b7d58c0d4dc7.patch | git am
+#cd ../..
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
