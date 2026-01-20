@@ -74,12 +74,12 @@ if [ ! -e "vendor/evolution-priv" ]; then
     cd ../../../
 fi
 
-export WITH_GMS=true
+export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=false
 export TARGET_USES_VULKAN=false
 #export TARGET_USES_EROFS=true
-export TARGET_USES_PICO_GAPPS=true
+export TARGET_USES_PICO_GAPPS=false
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
 #lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
 lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && m evolution
