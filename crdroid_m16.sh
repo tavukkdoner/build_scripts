@@ -36,6 +36,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
 # cd ../..
 
+cd frameworks/av
+git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
