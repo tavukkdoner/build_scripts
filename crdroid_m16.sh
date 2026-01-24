@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -28,9 +28,9 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-cd build/make
-curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
-cd ../..
+#cd build/make
+#curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+#cd ../..
 
 # cd system/core
 # curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
@@ -40,7 +40,7 @@ cd ../..
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
-export TARGET_USES_VULKAN=true
+export TARGET_USES_VULKAN=false
 export UCLAMP_FEATURE_ENABLED=false
 
 source build/envsetup.sh
@@ -52,5 +52,5 @@ if [ ! -e "vendor/lineage-priv" ]; then
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && mka bacon
+lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && mka bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
