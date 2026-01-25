@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -38,6 +38,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 
 cd frameworks/av
 git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
+cd frameworks/native
+curl https://github.com/VoltageOS/frameworks_native/commit/7e4df9a63981d6796d31e810a427b7d58c0d4dc7.patch | git am
 cd ../..
 
 # Set up build environment
