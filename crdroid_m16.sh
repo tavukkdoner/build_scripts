@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -47,6 +47,14 @@ cd ../..
 cd vendor/lineage
 curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 cd ../..
+
+cd device/qcom/sepolicy_vndr/legacy-um
+curl https://github.com/tavukkdoner/android_device_qcom_sepolicy_vndr/commit/e02db4d2d6690a6233716fc386858f16abdd3aac.patch | git am
+cd ../../../..
+
+cd device/qcom/sepolicy_vndr/legacy-um
+curl https://github.com/tavukkdoner/android_device_qcom_sepolicy_vndr/commit/abfa9380f0d2e568e51d3656b4bc8e031917eead.patch | git am
+cd ../../../..
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
