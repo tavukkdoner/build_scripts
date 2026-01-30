@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/apps/Etar
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
@@ -30,7 +30,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-#/opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
@@ -47,10 +47,6 @@ source build/envsetup.sh
 
 #cd frameworks/av
 #git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
-#cd ../..
-
-#cd frameworks/native
-#curl https://github.com/VoltageOS/frameworks_native/commit/7e4df9a63981d6796d31e810a427b7d58c0d4dc7.patch | git am
 #cd ../..
 
 # https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
