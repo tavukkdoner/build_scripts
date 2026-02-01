@@ -31,6 +31,10 @@ cd frameworks/av
 git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
 cd ../..
 
+cd frameworks/native
+curl https://github.com/VoltageOS/frameworks_native/commit/7e4df9a63981d6796d31e810a427b7d58c0d4dc7.patch | git am
+cd ../..
+
 #cd vendor/lineage
 #curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 #cd ../..
