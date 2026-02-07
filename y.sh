@@ -62,6 +62,7 @@ if [ ! -e "vendor/lineage-priv" ]; then
     curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
     chmod +x create-signed-env.sh
     ./create-signed-env.sh
+    cp -r vendor/lineage-priv/keys vendor/yaap/signing/
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
