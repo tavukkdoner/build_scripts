@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Remove Local Manifests
-rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf .repo/local_manifests/ 
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -13,7 +13,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs --no-clone-bundle
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-y .repo/local_manifests
+#git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-y .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -25,12 +25,12 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-/opt/crave/resync.sh 
+#/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
-cd build/make
-curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
-cd ../..
+#cd build/make
+#curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+#cd ../..
 
 # cd system/core
 # curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
@@ -44,9 +44,9 @@ cd ../..
 # curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 # cd ../..
 
-cd device/lineage/sepolicy
-curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
-cd ../../..
+#cd device/lineage/sepolicy
+#curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
+#cd ../../..
 
 # Set up build environment
 export BUILD_USERNAME=tavukkdoner 
