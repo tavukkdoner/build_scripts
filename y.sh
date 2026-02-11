@@ -40,6 +40,8 @@ repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs --no-clon
 # git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
 # cd ../..
 
+rm -rf device/qcom/sepolicy-legacy-um
+git clone https://github.com/LineageOS/android_device_qcom_sepolicy -b lineage-23.2-legacy-um device/qcom/sepolicy-legacy-um
 # cd vendor/lineage
 # curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 # cd ../..
