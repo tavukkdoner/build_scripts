@@ -44,6 +44,10 @@ cd vendor/lineage
 curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 cd ../..
 
+cd frameworks/base
+curl https://github.com/tavukkdoner/android_frameworks_base/commit/dbde4ab5025fbce90e76b4f296f8b6720583054a.patch | git am
+cd ../..
+
 cd device/lineage/sepolicy
 curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
 cd ../../..
