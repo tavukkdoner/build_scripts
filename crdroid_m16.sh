@@ -48,10 +48,10 @@ cd frameworks/base
 curl https://github.com/tavukkdoner/android_frameworks_base/commit/dbde4ab5025fbce90e76b4f296f8b6720583054a.patch | git am
 cd ../..
 
-cd kernel/xiaomi/mithorium-4.19/kernel
-curl https://github.com/tavukkdoner/kernel_msm-4.19/commit/a0c4253fb91bbfd7e915bbd045dff1eb8c8d8fea.patch | git am
-curl https://github.com/tavukkdoner/kernel_msm-4.19/commit/250349dec3c89291f0974c9332093963264ad04f.patch | git am
-cd ../../../..
+#cd kernel/xiaomi/mithorium-4.19/kernel
+#curl https://github.com/tavukkdoner/kernel_msm-4.19/commit/a0c4253fb91bbfd7e915bbd045dff1eb8c8d8fea.patch | git am
+#curl https://github.com/tavukkdoner/kernel_msm-4.19/commit/250349dec3c89291f0974c9332093963264ad04f.patch | git am
+#cd ../../../..
 
 cd device/lineage/sepolicy
 curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
