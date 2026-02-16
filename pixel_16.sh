@@ -3,7 +3,8 @@
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
 #rm -rf vendor/lineage-priv
-rm -rf prebuilts/clang/host/linux-x86
+rm -rf vendor/pixel/gms
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
 # rm -rf hardware/mithorium/
