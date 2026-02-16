@@ -45,7 +45,7 @@ cd ../..
 #cd ../..
 
 cd vendor/pixel/gms/common
-rm common-vendor.mk
+rm -rf common-vendor.mk
 curl -O https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/common-vendor.mk
 cd ../../../..
 
