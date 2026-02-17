@@ -45,6 +45,14 @@ cd ../..
 #curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 #cd ../..
 
+cd packages/modules/Wifi
+curl https://github.com/tavukkdoner/android_packages_modules_Wifi1/commit/b42f36f23b1790a693b3d09296ec19420ab9054e.patch | git am
+cd ../../..
+
+cd vendor/lineage
+curl https://github.com/tavukkdoner/android_vendor_lineage1/commit/18caf8c490f7823adde7ae0592a7a96cead5b065.patch | git am
+cd ../..
+
 cd vendor/pixel/gms/common
 rm -rf common-vendor.mk
 curl -O https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/common-vendor.mk
