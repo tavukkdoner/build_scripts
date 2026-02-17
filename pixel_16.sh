@@ -60,7 +60,7 @@ export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
 export TARGET_USES_VULKAN=false
 export UCLAMP_FEATURE_ENABLED=false
-export TARGET_USES_MAGICPORTRAIT=false
+export TARGET_USES_MAGICPORTRAIT=true
 
 source build/envsetup.sh
 
