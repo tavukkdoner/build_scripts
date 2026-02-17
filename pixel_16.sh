@@ -49,6 +49,11 @@ cd packages/modules/Wifi
 curl https://github.com/tavukkdoner/android_packages_modules_Wifi1/commit/b42f36f23b1790a693b3d09296ec19420ab9054e.patch | git am
 cd ../../..
 
+cd packages/apps/Settings
+curl https://github.com/tavukkdoner/android_packages_apps_Settings1/commit/1942c856ca2993192ba440d58ff574b9aca55dda.patch | git am
+curl https://github.com/tavukkdoner/android_packages_apps_Settings1/commit/7482dc0429190a50121230a3ce2e46c2e7ea2039.patch | git am
+cd ../../..
+
 cd vendor/lineage
 curl https://github.com/tavukkdoner/android_vendor_lineage1/commit/18caf8c490f7823adde7ae0592a7a96cead5b065.patch | git am
 cd ../..
