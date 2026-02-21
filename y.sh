@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -46,6 +46,8 @@ rm -rf system/update_engine
 git clone https://github.com/tavukkdoner/system_update_engine -b sixteen system/update_engine
 rm -rf system/core
 git clone https://github.com/tavukkdoner/system_core1 -b sixteen system/core
+rm -rf device/lineage/sepolicy
+git clone https://github.com/tavukkdoner/device_lineage_sepolicy1 -b sixteen device/lineage/sepolicy
 cd vendor/google/gms
 rm -rf gms-vendor.mk
 curl https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/gms-vendor1.mk -o gms-vendor.mk
