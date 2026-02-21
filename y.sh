@@ -46,6 +46,10 @@ rm -rf system/update_engine
 git clone https://github.com/tavukkdoner/system_update_engine -b sixteen system/update_engine
 rm -rf system/core
 git clone https://github.com/tavukkdoner/system_core1 -b sixteen system/core
+cd vendor/google/gms
+rm -rf gms-vendor.mk
+curl https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/gms-vendor1.mk -o gms-vendor.mk
+cd ../../..
 # cd vendor/lineage
 # curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
 # cd ../..
