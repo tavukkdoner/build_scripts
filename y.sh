@@ -36,9 +36,9 @@ cd ../..
 # curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
 # cd ../..
 
-# cd frameworks/av
-# git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
-# cd ../..
+cd frameworks/av
+git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
+cd ../..
 
 rm -rf device/qcom/sepolicy-legacy-um
 git clone https://github.com/tavukkdoner/android_device_qcom_sepolicy -b lineage-23.2-legacy-um device/qcom/sepolicy-legacy-um
