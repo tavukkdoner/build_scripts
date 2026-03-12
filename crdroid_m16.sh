@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-rm -rf prebuilts/clang/host/linux-x86
+#rm -rf prebuilts/clang/host/linux-x86
 #rm -rf external/chromium-webview
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
@@ -60,6 +60,7 @@ export TARGET_ENABLE_BLUR=true
 export TARGET_USES_VULKAN=false
 export UCLAMP_FEATURE_ENABLED=false
 export TARGET_USES_MAGICPORTRAIT=true
+export TARGET_USES_EROFS2=false
 
 source build/envsetup.sh
 
