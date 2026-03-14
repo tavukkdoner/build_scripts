@@ -37,9 +37,11 @@ export UCLAMP_FEATURE_ENABLED=false
 source build/envsetup.sh
 
 if [ ! -e "vendor/lineage-priv" ]; then
-    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+    git clone https://github.com/tavukkdoner/crDroid-build-signed-script1 vendor/key-generator
+    cd vendor/key-generator
     chmod +x create-signed-env.sh
     ./create-signed-env.sh
+    cd ../..
 fi
 
 cd build/make
