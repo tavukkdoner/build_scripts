@@ -9,7 +9,7 @@ rm -rf prebuilts/clang/host/linux-x86
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.1 --git-lfs
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.2 --git-lfs
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-axion .repo/local_manifests
