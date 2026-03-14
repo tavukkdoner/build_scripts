@@ -17,8 +17,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 
 # Clone local_manifests repository
-#git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo2 .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-evo .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
@@ -49,10 +48,9 @@ source build/envsetup.sh
 #git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
 #cd ../..
 
-# https://android.googlesource.com/platform/hardware/interfaces/+/refs/tags/android-15.0.0_r23
-# https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/421399
-# lunch lineage_Mi439_4_19-bp1a-userdebug && make installclean && mka bacon
-# lunch lineage_Mi439_4_19-bp1a-eng && make installclean && mka bacon
+cd device/lineage/sepolicy
+curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
+cd ../../..
 
 #cd build/make
 #curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
