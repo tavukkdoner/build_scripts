@@ -2,7 +2,7 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/apps/Etar
 # rm -rf frameworks/base
 # rm -rf kernel/xiaomi/mithorium-4.19/kernel
@@ -29,7 +29,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # fi 
 
 # Sync the repositories  
-#/opt/crave/resync.sh 
+/opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
 # Set up build environment
@@ -48,13 +48,13 @@ source build/envsetup.sh
 #git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
 #cd ../..
 
-#cd device/lineage/sepolicy
-#curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
-#cd ../../..
+cd device/lineage/sepolicy
+curl https://github.com/tavukkdoner/android_device_crdroid_sepolicy/commit/b4eec83467aa3bfd7473ebcac9a6424bf10075c7.patch | git am
+cd ../../..
 
-#cd build/make
-#curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
-#cd ../..
+cd build/make
+curl https://github.com/tavukkdoner/android_build/commit/02b273229d018d2bfaff989e2289420736d83bfc.patch | git am
+cd ../..
 
 #cd system/core
 #curl https://github.com/tavukkdoner/android_system_core/commit/fd885f14692478d52ffd8de2d02131fd0b5357fe.patch | git am
@@ -68,12 +68,12 @@ if [ ! -e "vendor/evolution-priv" ]; then
     cd ../../../
 fi
 
-export WITH_GMS=true
+export WITH_GMS=false
 export TARGET_ENABLE_BLUR=true
 export UCLAMP_FEATURE_ENABLED=false
 export TARGET_USES_VULKAN=false
 #export TARGET_USES_EROFS=true
-export TARGET_USES_PICO_GAPPS=true
+export TARGET_USES_PICO_GAPPS=false
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
 #lunch lineage_Mi439_4_19-bp3a-userdebug && make installclean && m evolution
 lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && m evolution
