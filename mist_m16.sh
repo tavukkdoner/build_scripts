@@ -2,14 +2,14 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
-#rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 #rm -rf packages/modules/adb
 #rm -rf kernel/xiaomi/mithorium-4.19
 # rm -rf hardware/mithorium/
 # rm -rf hardware/qcom-caf/msm8937
 
 # Init Rom Manifest
-repo init -u https://github.com/Project-Mist-OS/manifest -b 4.3 --git-lfs --depth=1
+repo init -u https://github.com/Project-Mist-OS/manifest -b 16.2 --git-lfs --depth=1
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-mist .repo/local_manifests
@@ -31,7 +31,7 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 export BUILD_USERNAME=tavukkdoner 
 export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
-export UCLAMP_FEATURE_ENABLED=true
+export UCLAMP_FEATURE_ENABLED=false
 export DEX2OAT_THREADS=4
 export DEX2OAT_CORES=4,5,6,7
 export WITH_GMS=false
