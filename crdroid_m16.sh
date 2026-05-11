@@ -59,7 +59,7 @@ export BUILD_HOSTNAME=crave
 export TARGET_ENABLE_BLUR=true
 export TARGET_USES_VULKAN=false
 export UCLAMP_FEATURE_ENABLED=false
-export LTO_FEATURE_ENABLED=false
+export LTO_FEATURE_ENABLED=true
 export TARGET_USES_MAGICPORTRAIT=true
 export TARGET_USES_EROFS2=true
 
