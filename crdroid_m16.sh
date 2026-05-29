@@ -40,9 +40,9 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-fi
 # git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/14/468714/1 && git cherry-pick FETCH_HEAD
 # cd ../..
 
-#cd vendor/lineage
-#curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
-#cd ../..
+cd vendor/lineage
+curl https://github.com/tavukkdoner/android_vendor_crdroid/commit/56cfbd73169367e57d5a8aed169b0ac89eb41958.patch | git am
+cd ../..
 
 #cd kernel/xiaomi/mithorium-4.19/kernel
 #curl https://github.com/tavukkdoner/kernel_msm-4.19/commit/a0c4253fb91bbfd7e915bbd045dff1eb8c8d8fea.patch | git am
@@ -61,7 +61,7 @@ export TARGET_USES_VULKAN=false
 export UCLAMP_FEATURE_ENABLED=false
 export LTO_FEATURE_ENABLED=true
 export TARGET_USES_MAGICPORTRAIT=true
-export TARGET_USES_EROFS2=false
+export TARGET_USES_EROFS2=true
 
 source build/envsetup.sh
 
