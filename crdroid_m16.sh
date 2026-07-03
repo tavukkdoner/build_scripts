@@ -4,10 +4,10 @@
 rm -rf .repo/local_manifests/
 
 # Init Rom Manifest
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle --depth 1
+repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle --depth=1
 
 # Clone local_manifests repository
-git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final .repo/local_manifests
+git clone https://github.com/tavukkdoner/local_manifests.git --depth=1 -b a16-final .repo/local_manifests
 
 # Original local_manifest Mi439 A15 QPR2 no modifications -> a15-qpr2-mithorium
 # git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a15-qpr2-mithorium .repo/local_manifests
