@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests/ 
 
 # Init Rom Manifest
-repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs --depth=1
+repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs --depth=1
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a16-final-lunaris .repo/local_manifests
