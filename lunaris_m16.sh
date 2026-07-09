@@ -40,11 +40,13 @@ export TARGET_BOOT_ANIMATION_RES=720
 source build/envsetup.sh
 
 if [ ! -e "vendor/lineage-priv" ]; then
-    curl -O https://raw.githubusercontent.com/tavukkdoner/crDroid-build-signed-script/crdroid/create-signed-env.sh
+    git clone https://github.com/tavukkdoner/crDroid-build-signed-script1 vendor/key-generator
+    cd vendor/key-generator
     chmod +x create-signed-env.sh
     ./create-signed-env.sh
+    cd ../..
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp2a-userdebug && make installclean && m lunaris
+lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && m lunaris
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
