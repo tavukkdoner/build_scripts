@@ -48,5 +48,5 @@ if [ ! -e "vendor/lineage-priv" ]; then
 fi
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/433445
-lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && m lunaris
+lunch lineage_Mi439_4_19-bp4a-userdebug && make installclean && m bacon
 # lunch lineage_Mi439_4_19-bp2a-eng && make installclean && mka bacon
