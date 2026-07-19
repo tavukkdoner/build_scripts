@@ -6,7 +6,7 @@ rm -rf .repo/local_manifests/
 # Init Rom Manifest
 #repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 #repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
-repo init -u https://github.com/tavukkdoner/manifest_evo -b cnb --git-lfs --depth 1
+repo init -u https://github.com/Evolution-X/manifest -b cnb --git-lfs --depth 1
 
 # Clone local_manifests repository
 git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a17-final-evo .repo/local_manifests
