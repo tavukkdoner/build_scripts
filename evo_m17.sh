@@ -2,6 +2,13 @@
 
 # Remove Local Manifests
 rm -rf .repo/local_manifests/ 
+# error: Unable to fully sync the tree
+# error: Updating local project lists failed.
+# Try re-running with "-j1 --fail-fast" to exit at the first error.
+# ================================================================================
+# Repo command failed due to the following `SyncError` errors:
+# error: prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9: Cannot remove project: uncommitted changes are present.
+rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 
 # Init Rom Manifest
 #repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
