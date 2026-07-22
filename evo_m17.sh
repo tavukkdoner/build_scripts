@@ -8,7 +8,7 @@ rm -rf .repo/local_manifests/
 # ================================================================================
 # Repo command failed due to the following `SyncError` errors:
 # error: prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9: Cannot remove project: uncommitted changes are present.
-rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+#rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 
 # Init Rom Manifest
 #repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
