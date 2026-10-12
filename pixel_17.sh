@@ -22,6 +22,10 @@ git clone https://github.com/tavukkdoner/local_manifests.git --depth 1 -b a17-fi
 /opt/crave/resync.sh 
 # /opt/crave/resynctest.sh
 
+cd build/soong
+curl https://github.com/yaap-17-stone/build_soong/commit/f9c27b0b9298f6eeee9a850346e0a646c3eaeb87.patch | git am
+cd ../..
+
 cd vendor/pixel/gms/common
 rm -rf common-vendor.mk
 curl -O https://raw.githubusercontent.com/tavukkdoner/temp/refs/heads/main/common-vendor.mk
