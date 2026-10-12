@@ -40,7 +40,7 @@ source build/envsetup.sh
 
 if [ ! -e "vendor/lineage-priv" ]; then
     rm -rf vendor/key-generator
-    git clone https://github.com/tavukkdoner/crDroid-build-signed-script1 vendor/key-generator
+    git clone https://github.com/tavukkdoner/crDroid-build-signed-script1 -b 17.0 vendor/key-generator
     cd vendor/key-generator
     chmod +x create-signed-env.sh
     ./create-signed-env.sh
